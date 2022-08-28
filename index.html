@@ -10,17 +10,22 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-		<link rel="stylesheet" href="src/styles.css" />
+		<link rel="stylesheet" href="style.css" />
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
 
 <body>
 	<div id="app"></div>
-	<div class="#description">
+	<div class="weatherapp">
 <h1>kermanshah tehran ramsar paris </h1>
 <h2> kermanshah</h2>
-	<span id="temperature"> 33°C mostly cloudy</span><span>°</span>
+	<span id="temperature"> 33°C </span><span class="units">
+		
+		<a href="#" id="celsius-link">°C</a> |
+		<a href="#" id="fahrenheit-link">°F</a>
+		<div class="description"> mostly cloudy</div>
+	</span>
 	<ul>
 		<li>Humidity: <span id="humidity"></span>%</li>
 		<li>Wind: <span id="wind"></span> km/h</li>
@@ -34,64 +39,11 @@
 				<input type="submit" value="current" class="btn btn-success" />
 
 	</form>
-	
-	<div class="card-group">
-			<div class="card">
-				<div class="card-body">
-					<p class="card-title">sat</h5>
-					<p class="card-text">35°
-						<br/>
-						19°
-					</p>
-					<p class="card-text"><small class="text-muted">🌤</small></p>
-				</div>
-			</div>
-			<div class="card-group">
-				 <div class="card">
-					<h5 class="card-title">sun</h5>
-					<p class="card-text">38°
-						<br/>19°
-					</p>
-					<p class="card-text"><small class="text-muted">☀</small></p>
-				</div>
-			</div>
-			<div class="card-group">
-        <div class="card">
-
-						<h5 class="card-title">mon</h5>
-						<p class="card-text">39°
-							<br/>
-							19°
-						</p>
-						<p class="card-text"><small class="text-muted">☀</small></p>
-          </div>
-        </div>
-        <div class="card-group">
-          <div class="card">
-  
-              <h5 class="card-title">mon</h5>
-              <p class="card-text">39°
-                <br/>
-                19°
-              </p>
-              <p class="card-text"><small class="text-muted">☀</small></p>
-            </div>
-          </div>
-      <div class="card-group">
-        <div class="card">
-					<h5 class="card-title">wed</h5>
-					<p class="card-text">40°
-						<br/>21°
-					</p>
-					<p class="card-text"><small class="text-muted">☀</small></p>
-				</div>
-			</div>
-		</div>
-				</div>
+</div>
 
 
-                <a href="https://github.com/rahilnik/myweatherapp"></a>;
-	<script src="src/index.js">
+                <a href="https://github.com/rahilnik/myweatherapp"></a>
+	<script src="index.js">
 	</script>
 </body>
 

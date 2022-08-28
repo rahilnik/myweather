@@ -1,8 +1,10 @@
-body {
-    font-family: sans-serif;
-    padding-left: 20px;
-    margin: auto;
-  }
+ .weatherapp {
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
   h1 {
     padding-top: 0;
     padding-left: 10px;
