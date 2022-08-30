@@ -21,6 +21,10 @@ let days = [
 var day = days[now.getDay()];
 let h3 = document.querySelector("h3");
 h3.innerHTML = `today is ${day} ${hours}:${minutes}`;
+
+
+        
+
 function searchcity(city) {
   let apiKey = "9afbead6b698cb67e5e11d1dfdb440d5";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -45,13 +49,15 @@ function displayWeatherCondition(response) {
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
   let iconElement = document.querySelector("#icon");
+ 
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-
-}
+  getForecast(response.data.coord);
+  }
+  
 
 
 function displayfahrenheittemperature(event){
